@@ -1,43 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>OneSignal Examples Page</title>
-<!-- Google Analytics -->
-<script>
-  // Used from: https://developers.google.com/analytics/devguides/collection/analyticsjs
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-106423818-1', 'auto');
-ga('send', 'pageview');
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-<!-- End Google Analytics -->
 
-<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-<script>
-  var OneSignal = window.OneSignal || [];
-  OneSignal.push(function() {
-    OneSignal.init({
-      appId: "967e46fc-e1e5-4e1b-ad42-d32f863575b6",
-    });
-  });
-</script>
-
-</head>
-<body>
-  <h1> OneSignal Examples </h1>
-  <div>
-    <ul>
-      <li><a href='/tagging'>Tagging example</a></li>
-      <li><a href='/ga'>Google Analytics example</a></li>
-      <li><a href="/cross-origin-example">Cross-origin Subscription tracking Example</a></li>
-      <li><a href='/geolocation'>GeoLocation example</a></li>
-      <li><a href='/subdirectory/subdirectory-testpage'>Subdirectory Test Page</a></li>
-      <li><a href='/testpage'>Test Page</a></li>
-      <li><a href='/prompt-delay-seconds'>Delay prompt 30 seconds example</a></li>
-      <li><a href='/prompt-delay-visits'>Delay prompt 3 visits example</a></li>
-      <!--<li><a href='/http-setup'>HTTP Example</a></li>-->
-    </ul>
-  </div>
   <p><button onclick="tagUser()">Tag User</button></p>
   <p><button onclick="sendSelfNotification()">Send Self Notification</button></p>
   <p><button id="loginbutton" onclick="onLoginButton()">Login</button></p>
